@@ -1,0 +1,89 @@
+================================================================================
+           SILVER (1999) - EDICIÓN REMASTERIZADA EN ESPAÑOL PARA ANDROID
+                    CON CONTROLES TÁCTILES Y GESTOS FLUIDOS
+================================================================================
+
+¡Todo el proceso de preparación, doblaje al español y refactorización táctil
+está completo! En tu Escritorio tienes la aplicación:
+   -> Silver_Android_Español.apk
+
+--------------------------------------------------------------------------------
+1. QUÉ TIENES PREPARADO EN TU PC
+--------------------------------------------------------------------------------
+1. El juego completo en "C:\GOG Games\Silver":
+   • 100% de los 118 archivos de texto traducidos al español oficial de 1999.
+   • Los 1.256 audios y diálogos de personajes doblados en español (WAV y OGG).
+   • El video de introducción (INTRO.AVI) con doblaje en español.
+   • Capa de interceptación nativa "SDL2.dll" con el reconocedor de gestos.
+   • Archivo de configuración "silver_touch.ini" para calibrar la sensibilidad.
+
+2. La aplicación "Silver_Android_Español.apk" en tu Escritorio:
+   • Cuenta con el logo oficial de Silver en alta resolución como icono.
+   • Arranca directamente en pantalla completa panorámica.
+   • Permite lanzar el juego y consultar la guía de gestos en cualquier momento.
+
+--------------------------------------------------------------------------------
+2. PASOS PARA INSTALAR Y JUGAR EN TU ANDROID
+--------------------------------------------------------------------------------
+
+PASO 1: INSTALAR LA APP EN TU TELÉFONO
+  • Conecta tu móvil a la PC por cable USB (o envíate el archivo por Drive/Telegram).
+  • Copia "Silver_Android_Español.apk" a tu móvil e instálalo.
+  • Verás el icono de "Silver" en tu pantalla de inicio y cajón de aplicaciones.
+
+PASO 2: COPIAR LA CARPETA DEL JUEGO
+  • Copia la carpeta completa "C:\GOG Games\Silver" a la memoria interna de tu
+    teléfono, preferiblemente dentro de la carpeta "Download" (o "Winlator"):
+    Ruta sugerida: /storage/emulated/0/Download/Silver
+
+PASO 3: CONFIGURAR WINLATOR (SOLO LA PRIMERA VEZ)
+  • Si no tienes Winlator, descárgalo (la app te da el enlace oficial con un toque).
+  • En Winlator, crea un contenedor (resolución recomendada: 1280x720 o nativa).
+  • En los controles del contenedor, elige el perfil "RTS".
+  • En el menú lateral de Winlator (deslizando desde el borde izquierdo):
+    - Pon "Mouse Mode" / "Touchscreen Mode" en ABSOLUTO (Direct Touch).
+    - Oculta los botones virtuales en pantalla (Show Controls -> OFF u Opacidad 0%),
+      ya que la capa que programamos hace todo con tus dedos sin botones falsos.
+  • Haz clic derecho o mantén pulsado sobre "silver.exe" dentro de la carpeta y
+    selecciona "Create Shortcut".
+
+PASO 4: ¡A JUGAR!
+  • A partir de aquí, simplemente toca el icono de "Silver" con su logo en tu
+    pantalla de inicio de Android y disfruta del juego.
+
+--------------------------------------------------------------------------------
+3. GUÍA DE GESTOS TÁCTILES (CÓMO SE JUEGA CON LOS DEDOS)
+--------------------------------------------------------------------------------
+
+• EXPLORACIÓN Y DIÁLOGOS:
+  - Tocar la pantalla (Tap rápido): Caminar hacia el punto, interactuar con cofres,
+    hablar con aldeanos o seleccionar opciones en menús.
+  - Doble toque: David echa a correr.
+  - Mantener pulsado el dedo (> 0.4s sin moverlo): Clic Derecho automático.
+    ¡Abre inmediatamente el Menú Radial (Anillo de armas, magias e inventario)!
+
+• SISTEMA DE COMBATE TÁCTIL (¡AUTOMÁTICO POR DESLIZAMIENTO!):
+  En PC original era necesario mantener pulsado Ctrl con una mano y mover el ratón
+  con la otra. En tu versión de Android solo deslizas el dedo en la pantalla:
+  
+  - Deslizar hacia ARRIBA (Swipe ↑):    ESTOCADA FRONTAL (Thrust attack)
+  - Deslizar hacia la IZQUIERDA (Swipe ←): TAJO HACIA LA IZQUIERDA
+  - Deslizar hacia la DERECHA (Swipe →):   TAJO HACIA LA DERECHA
+  - Deslizar hacia ABAJO (Swipe ↓):     BLOQUEO / PARADA CON ESCUDO
+
+  Al soltar el dedo tras el golpe, David baja la guardia de forma natural.
+
+--------------------------------------------------------------------------------
+4. CALIBRACIÓN OPCIONAL (silver_touch.ini)
+--------------------------------------------------------------------------------
+En la carpeta del juego se encuentra "silver_touch.ini". Si deseas cambiar la
+sensibilidad del swipe o el tiempo de pulsación para el menú radial, puedes
+editarlo con un bloc de notas:
+  SwipeThreshold=28      (Distancia en píxeles para reconocer un ataque)
+  SwipeMaxTimeMs=380     (Tiempo máximo en milisegundos para considerarlo ataque)
+  LongPressTimeMs=420    (Milisegundos para abrir el menú radial)
+  CombatMotionDelta=120  (Fuerza del vector de corte de la espada)
+
+================================================================================
+                      ¡Que disfrutes de Silver en español!
+================================================================================
