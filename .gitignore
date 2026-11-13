@@ -2,3 +2,5 @@
 *.7z
 *.tar
 *.bak
+*.tmp
+_original_english_backup/

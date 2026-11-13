@@ -1,0 +1,4 @@
+*.avi filter=lfs diff=lfs merge=lfs -text
+*.ogv filter=lfs diff=lfs merge=lfs -text
+*.smg filter=lfs diff=lfs merge=lfs -text
+*.smk filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,20 @@
+#version 140
+
+in vec2 var_uv;
+out vec4 var_out;
+uniform vec4 var_param;
+uniform sampler2D SG3D_TEXTURE_DIFFUSE0;
+uniform sampler2D SG3D_TEXTURE_DIFFUSE1;
+uniform sampler2D SG3D_TEXTURE_DIFFUSE2;
+
+const mat3 yuv2rgb =   mat3(1,0,1.596,1,-0.391,-0.813,1,2.018,0);
+
+void main()
+{
+	float y=texture(SG3D_TEXTURE_DIFFUSE0, var_uv).x;
+	float u=texture(SG3D_TEXTURE_DIFFUSE1, var_uv).x;
+	float v=texture(SG3D_TEXTURE_DIFFUSE2, var_uv).x;
+
+	vec3 rgb=vec3(1.1643*(y-0.0625), u-0.5, v-0.5)*yuv2rgb;
+	var_out = vec4(rgb, 1.0)*var_param;
+}

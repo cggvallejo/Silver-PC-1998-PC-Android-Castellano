@@ -1,0 +1,14 @@
+#version 140
+
+in vec2 var_uv;
+out vec4 var_out;
+uniform vec4 var_param;
+uniform sampler2D SG3D_TEXTURE_DIFFUSE;
+void main()
+{
+	var_out = (texture(SG3D_TEXTURE_DIFFUSE, var_uv+var_param.xy*-7.0)*55.0+
+			texture(SG3D_TEXTURE_DIFFUSE, var_uv+var_param.xy*-3.0)*330.0+
+			texture(SG3D_TEXTURE_DIFFUSE, var_uv)*252.0+
+			texture(SG3D_TEXTURE_DIFFUSE, var_uv+var_param.xy* 3.0)*330.0+
+			texture(SG3D_TEXTURE_DIFFUSE, var_uv+var_param.xy* 7.0)*55.0)/1022.0;
+}
